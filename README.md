@@ -184,8 +184,8 @@ The file `.project_x.txt` is a hidden file that has been archived and should not
 Currently both the User and Group have write permissions. To fix this we will use the `chmod` command again.
 * `chmod ug-w .project_x.txt`
 
->researcher2@e587efd88d96:~/projects$ `chmod ug-w .project_x.txt`  
-researcher2@e587efd88d96:~/projects$ `ls -la`  
+>researcher2@e587efd88d96:/projects$ `chmod ug-w .project_x.txt`  
+researcher2@e587efd88d96:/projects$ `ls -la`  
 total 32  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 17:29 .  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:01 ..  
