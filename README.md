@@ -62,7 +62,7 @@ Navigate to the `projects` directory.
 List the contents and permissions of the `projects` directory.
 * To list out the contents of the directory, use the same command as above but add a modifier to give the contents of the directories permissions
 * `ls -l`
->researcher2@ee38eb1d384a:~$ `cd projects`  
+>researcher2@ee38eb1d384a:$ `cd projects`  
 researcher2@ee38eb1d384a:~/projects$ `ls -l`   
 total 20  
 drwx--x--- 2 researcher2 research_team 4096 Apr 27 18:30 drafts  
