@@ -102,7 +102,7 @@ From the above screenshots, you will see that `.project_x.txt` is the hidden fil
 >-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
 >-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt  
 
-researcher2@e587efd88d96:~/projects$ `ls -la`  
+>researcher2@e587efd88d96:~/projects$ `ls -la`  
 total 32  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 17:29 .  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:01 ..  
