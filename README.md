@@ -89,16 +89,16 @@ If we would like to see if there are any hidden files, we can add the `-a` modif
 We can also combine the `-l` modifier with `-a` to get the full list and permissions details  as well
 * `ls -la`
 
->researcher2@2dfe8e5aabad:~/projects$ `ls -la`
-total 32
-drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:09 .
-drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 19:01 ..
--rw--w---- 1 researcher2 research_team   46 Apr 27 18:09 .project_x.txt
-drwx--x--- 2 researcher2 research_team 4096 Apr 27 18:09 drafts
--rw-rw-rw- 1 researcher2 research_team   46 Apr 27 18:09 project_k.txt
--rw-r----- 1 researcher2 research_team   46 Apr 27 18:09 project_m.txt
--rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_r.txt
--rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_t.txt
+>researcher2@2dfe8e5aabad:~/projects$ `ls -la`  
+total 32  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:09 .  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 19:01 ..  
+-rw--w---- 1 researcher2 research_team   46 Apr 27 18:09 .project_x.txt  
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 18:09 drafts   
+-rw-rw-rw- 1 researcher2 research_team   46 Apr 27 18:09 project_k.txt  
+-rw-r----- 1 researcher2 research_team   46 Apr 27 18:09 project_m.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_r.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_t.txt  
 
 From the above screenshots, you will see that `.project_x.txt` is the hidden file in the directory.
 
