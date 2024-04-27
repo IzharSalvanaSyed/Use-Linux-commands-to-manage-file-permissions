@@ -16,7 +16,7 @@ You are a security professional at a large organization. You mainly work with th
 Your task is to examine existing permissions on the file system. You’ll need to determine if the permissions match the authorization that should be given. If they do not match, you’ll need to modify the permissions to authorize the appropriate users and remove any unauthorized access.
 
 ### Current file permissions
-displays the file structure of the `/home/researcher2/projects` directory
+Below is the file structure of the `/home/researcher2/projects` directory
 and the permissions of the files and subdirectory it contains.
 In the `/home/researcher2/projects` directory, there are five files with the following
 names and permissions:
@@ -112,3 +112,18 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts
 -rw-r----- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt  
+
+## Change file permissions <a name="permissions">
+Check whether any files in the projects directory have write permissions for the owner type of other.
+
+researcher2@e587efd88d96:~/projects$ `ls -l`  
+total 20  
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts  
+`-rw-rw-rw- 1 researcher2 research_team   46 Apr 27 17:29 project_k.txt`  
+-rw-r----- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt
+
+We can see that the file `project_k.txt` has write permissions for the owner type of other.  
+Change the permissions of the file identified in the previous step so that the owner type of other doesn’t have write permissions using the `chmod` command.
+* The `chmod` command `u` sets the permissions for the user who owns the file, `g` sets the permissions for the group that owns the file, and `o` sets the permissions for others.
