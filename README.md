@@ -127,6 +127,7 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts
 We can see that the file `project_k.txt` has write permissions for the owner type of other.  
 Change the permissions of the file identified in the previous step so that the owner type of other doesn’t have write permissions using the `chmod` command.
 * The `chmod` command `u` sets the permissions for the user who owns the file, `g` sets the permissions for the group that owns the file, and `o` sets the permissions for others.
+* Adding `-` (subtract) and/or `+` (add) with `r` (read), `w` (write), and/or `x` (execute) after will add or subtract that permission from user, group, and or other. 
 * `chmod o-w project_k.txt`
 
 There will be no output to indicate that the change has been made. To see if the change has been made we will use the `ls -l` command again
@@ -184,12 +185,12 @@ The file `.project_x.txt` is a hidden file that has been archived and should not
 Currently both the User and Group have write permissions. To fix this we will use the `chmod` command again.
 * `chmod ug-w .project_x.txt`
 
->researcher2@e587efd88d96:/projects$ `chmod ug-w .project_x.txt`  
+>researcher2@e587efd88d96:/projects$ `chmod ug+r-w .project_x.txt`  
 researcher2@e587efd88d96:/projects$ `ls -la`  
 total 32  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 17:29 .  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:01 ..  
-`-r--------` `1 researcher2 research_team   46 Apr 27 17:29 .project_x.txt`  
+`-r--r----- 1 researcher2 research_team   46 Apr 27 17:29 .project_x.txt`  
 drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_k.txt  
 -rw------- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
