@@ -70,9 +70,14 @@ If we use the `ls` without the `-l` modifier, we are presented with:
 
 As you can see above, it lists the same contents within the directory with less information. We must look at one of them to understand what the `-l` modifier provides.
 
-`drwx--x--- 2 researcher2 research_team 4096 Apr 27 16:40 drafts`
+`drwx--x---` 2 researcher2 research_team 4096 Apr 27 16:40 drafts
 
 * The 1st character indicates the file type. The `d` indicates it’s a directory. When this character is a hyphen `-`, it's a regular file.
 * The 2nd-4th characters indicate the read `r`, write `w`, and execute `x` permissions for the user. When one of these characters is a hyphen `-` instead, it indicates that this permission is not granted to the user.
 * The 5th-7th characters indicate the read `r`, write `w`, and execute `x` permissions for the group. When one of these characters is a hyphen `-` instead, it indicates that this permission is not granted for the group.
 * The 8th-10th characters indicate the read `r`, write `w`, and execute `x` permissions for the owner type of other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen `-` instead, that indicates that this permission is not granted for other.
+
+drwx--x--- `2 researcher2 research_team` 4096 Apr 27 16:40 drafts
+
+* The second block of text in the expanded directory listing is the user who owns the file.
+* The third block of text is the group owner of the file.
