@@ -131,8 +131,8 @@ Change the permissions of the file identified in the previous step so that the o
 
 There will be no output to indicate that the change has been made. To see if the change has been made we will use the `ls -l` command again
 
-researcher2@e587efd88d96:/projects$ chmod o-w project_k.txt  
-researcher2@e587efd88d96:/projects$ ls -l  
+researcher2@e587efd88d96:/projects$ `chmod o-w project_k.txt`   
+researcher2@e587efd88d96:/projects$ `ls -l`  
 total 20  
 drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts  
 `-rw-rw-r--` `1 researcher2 research_team   46 Apr 27 17:29 project_k.txt`  
