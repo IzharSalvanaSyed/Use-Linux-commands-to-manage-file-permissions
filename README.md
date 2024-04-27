@@ -69,6 +69,7 @@ If we use the `ls` without the `-l` modifier, we are presented with:
 ![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/1d74e277-a380-4173-ae30-642fd823741b)
 
 As you can see above, it lists the same contents within the directory with less information. We must look at one of them to understand what the `-l` modifier provides.
+
 `drwx--x--- 2 researcher2 research_team 4096 Apr 27 16:40 drafts`
 
 * The 1st character indicates the file type. The d indicates it’s a directory. When this character is a hyphen (-), it's a regular file.
