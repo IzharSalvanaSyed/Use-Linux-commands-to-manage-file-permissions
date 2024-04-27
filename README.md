@@ -10,7 +10,7 @@ Examine existing permissions on the file system, determine if the permissions ma
 5. [Change directory permissions](#permissions3)
 6. [Summary](#permissions4)
 
-## Project description
+## Project description <a name="description">
 You are a security professional at a large organization. You mainly work with their research team. Part of your job is to ensure users on this team are authorized with the appropriate permissions. This helps keep the system secure. 
 
 Your task is to examine existing permissions on the file system. You’ll need to determine if the permissions match the authorization that should be given. If they do not match, you’ll need to modify the permissions to authorize the appropriate users and remove any unauthorized access.
@@ -46,3 +46,7 @@ permissions on `drafts` are:
 * User = read, write, execute
 * Group = execute
 * Other = none
+
+## Check file and directory details <a name="details">
+From the CLI (Command Line Interface) type `ls` to see the list of contents of the current directory.
+![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/19fd024c-12fb-42e1-99a8-925af0cfbfe5)
