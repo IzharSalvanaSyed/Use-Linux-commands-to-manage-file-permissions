@@ -81,3 +81,33 @@ drwx--x--- `2 researcher2` `research_team` 4096 Apr 27 16:40 drafts
 
 * The second block of text in the expanded directory listing is the user who owns the file.
 * The third block of text is the group owner of the file.
+
+If we would like to see if there are any hidden files, we can add the `-a` modifier 
+* `ls -a`
+
+![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/ad84e9e1-71c5-475e-8d4f-17d4303d738f)
+
+We can also combine the `-l` modifier with `-a` to get the full list and permissions details  as well
+* `ls -la`
+
+![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/7a85af27-67be-407d-bd3f-aa651465de14)
+
+From the above screenshots, you will see that `.project_x.txt` is the hidden file in the directory.
+
+researcher2@c16d016cb98f:~/projects$ `ls -l`  
+total 20
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 16:40 drafts
+-rw-rw-rw- 1 researcher2 research_team   46 Apr 27 16:40 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Apr 27 16:40 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_t.txt
+researcher2@c16d016cb98f:~/projects$ `ls -la`
+total 32
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 16:40 .
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 16:58 ..
+-rw--w---- 1 researcher2 research_team   46 Apr 27 16:40 `.project_x.txt`
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 16:40 drafts
+-rw-rw-rw- 1 researcher2 research_team   46 Apr 27 16:40 project_k.txt
+-rw-r----- 1 researcher2 research_team   46 Apr 27 16:40 project_m.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_r.txt
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_t.txt
