@@ -101,6 +101,7 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts
 -rw-r----- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt  
+
 researcher2@e587efd88d96:~/projects$ `ls -la`  
 total 32  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 17:29 .  
