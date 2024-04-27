@@ -56,8 +56,7 @@ From the CLI (Command Line Interface) type `ls` to see the list of contents of t
 
 Navigate to the `projects` directory. 
 * `cd projects`
-
-![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/22d3af9c-f9b9-40fe-886c-986c6916fdf9)
+>researcher2@2dfe8e5aabad:~$ cd projects
 
 List the contents and permissions of the `projects` directory.
 * To list out the contents of the directory, use the same command as above but add a modifier to give the contents of the directories permissions
