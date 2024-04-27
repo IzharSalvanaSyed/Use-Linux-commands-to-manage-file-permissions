@@ -48,5 +48,20 @@ permissions on `drafts` are:
 * Other = none
 
 ## Check file and directory details <a name="details">
+All commands used in this project will be Linus-based commands. Please research your OS's (Operating System) commands to get the same information.
+
 From the CLI (Command Line Interface) type `ls` to see the list of contents of the current directory.
+
 ![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/19fd024c-12fb-42e1-99a8-925af0cfbfe5)
+
+Navigate to the `projects` directory. 
+* cd projects
+
+![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/22d3af9c-f9b9-40fe-886c-986c6916fdf9)
+
+List the contents and permissions of the `projects` directory.
+* To list out the contents of the directory, use the same command as above but add a modifier to give the contents of the directories permissions
+* ls -l
+
+![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/d8abc7c4-0dd9-46d1-a1f2-c08d43d09931)
+
