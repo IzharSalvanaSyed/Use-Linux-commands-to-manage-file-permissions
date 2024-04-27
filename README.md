@@ -52,7 +52,8 @@ All commands used in this project will be Linus-based commands. Please research 
 
 From the CLI (Command Line Interface) type `ls` to see the list of contents of the current directory.
 
-![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/19fd024c-12fb-42e1-99a8-925af0cfbfe5)
+>researcher2@ee38eb1d384a:~$ `ls`
+projects
 
 Navigate to the `projects` directory. 
 * `cd projects`
@@ -61,11 +62,18 @@ Navigate to the `projects` directory.
 List the contents and permissions of the `projects` directory.
 * To list out the contents of the directory, use the same command as above but add a modifier to give the contents of the directories permissions
 * `ls -l`
-
-![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/d8abc7c4-0dd9-46d1-a1f2-c08d43d09931)
+>researcher2@ee38eb1d384a:~$ `cd projects`  
+researcher2@ee38eb1d384a:~/projects$ `ls -l`   
+total 20  
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 18:30 drafts  
+-rw-rw-rw- 1 researcher2 research_team   46 Apr 27 18:30 project_k.txt  
+-rw-r----- 1 researcher2 research_team   46 Apr 27 18:30 project_m.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:30 project_r.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:30 project_t.txt  
 
 If we use the `ls` without the `-l` modifier, we are presented with:
-![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/1d74e277-a380-4173-ae30-642fd823741b)
+>researcher2@ee38eb1d384a:~/projects$ `ls`  
+drafts  project_k.txt  project_m.txt  project_r.txt  project_t.txt  
 
 As you can see above, it lists the same contents within the directory with less information. We must look at one of them to understand what the `-l` modifier provides.
 
@@ -84,7 +92,8 @@ drwx--x--- `2 researcher2` `research_team` 4096 Apr 27 16:40 drafts
 If we would like to see if there are any hidden files, we can add the `-a` modifier 
 * `ls -a`
 
-![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/ad84e9e1-71c5-475e-8d4f-17d4303d738f)
+>researcher2@ee38eb1d384a:~/projects$ `ls -a`   
+.  ..  .project_x.txt  drafts  project_k.txt  project_m.txt  project_r.txt  project_t.txt  
 
 We can also combine the `-l` modifier with `-a` to get the full list and permissions details  as well
 * `ls -la`
@@ -224,3 +233,6 @@ drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 19:01 ..
 -rw------- 1 researcher2 research_team   46 Apr 27 18:09 project_m.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_r.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_t.txt  
+
+## Summary <a name="summary">
+With that, we now understand how to navigate through a Linux directory and manage file permissions.
