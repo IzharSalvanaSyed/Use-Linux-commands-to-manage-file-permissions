@@ -204,3 +204,6 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts
 -rw------- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt  
+
+## Change directory permissions <a name="permissions3">
+Only the researcher2 user should be allowed to access the drafts directory and its contents. (This means that only researcher2 should have execute privileges.)
