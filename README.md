@@ -188,7 +188,7 @@ In most Linux file managers, hidden files and directories start with a dot `.` p
 
 The file `.project_x.txt` is a hidden file that has been archived and should not be written to by anyone. (The user and group should still be able to read this file.)
 
-`-rw--w---- 1 researcher2 research_team   46 Apr 27 17:29` `.project_x.txt`  
+>`-rw--w---- 1 researcher2 research_team   46 Apr 27 17:29` `.project_x.txt`  
 
 Currently both the User and Group have write permissions. To fix this we will use the `chmod` command again.
 * `chmod ug-w .project_x.txt`
