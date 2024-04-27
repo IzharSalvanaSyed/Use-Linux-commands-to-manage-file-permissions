@@ -147,7 +147,8 @@ As seen above the file `project_m.txt` is a restricted file and should not be re
 Useing the `chmod` command we can change permissions of the `project_m.txt` file so that the group doesn’t have read or write permissions.
 * `chmod g-rw project_m.txt`
 
->researcher2@e587efd88d96:/projects$ ls -la 
+>researcher2@e587efd88d96:~/projects$ `chmod g-rw project_m.txt`  
+researcher2@e587efd88d96:/projects$ `ls -la`  
 total 32  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 17:29 .  
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:01 ..  
