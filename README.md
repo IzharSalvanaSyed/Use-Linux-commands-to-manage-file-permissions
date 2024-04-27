@@ -55,13 +55,23 @@ From the CLI (Command Line Interface) type `ls` to see the list of contents of t
 ![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/19fd024c-12fb-42e1-99a8-925af0cfbfe5)
 
 Navigate to the `projects` directory. 
-* cd projects
+* `cd projects`
 
 ![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/22d3af9c-f9b9-40fe-886c-986c6916fdf9)
 
 List the contents and permissions of the `projects` directory.
 * To list out the contents of the directory, use the same command as above but add a modifier to give the contents of the directories permissions
-* ls -l
+* `ls -l`
 
 ![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/d8abc7c4-0dd9-46d1-a1f2-c08d43d09931)
 
+If we use the `ls` without the `-l` modifier, we are presented with:
+![image](https://github.com/IzharSalvanaSyed/Use-Linux-commands-to-manage-file-permissions/assets/156041933/1d74e277-a380-4173-ae30-642fd823741b)
+
+As you can see above, it lists the same contents within the directory with less information. We must look at one of them to understand what the `-l` modifier provides.
+`drwx--x--- 2 researcher2 research_team 4096 Apr 27 16:40 drafts`
+
+* The 1st character indicates the file type. The d indicates it’s a directory. When this character is a hyphen (-), it's a regular file.
+* The 2nd-4th characters indicate the read (r), write (w), and execute (x) permissions for the user. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted to the user.
+* The 5th-7th characters indicate the read (r), write (w), and execute (x) permissions for the group. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted for the group.
+* The 8th-10th characters indicate the read (r), write (w), and execute (x) permissions for the owner type of other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other.
