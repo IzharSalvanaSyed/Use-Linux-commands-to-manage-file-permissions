@@ -207,5 +207,20 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts
 
 ## Change directory permissions <a name="permissions3">
 Only the `researcher2` user should be allowed to access the `drafts` directory and its contents. (This means that only `researcher2` should have execute privileges.)  
-As we can see above the `u` (user), `researcher2`, and `g` (group), `research_team`, have access to the `drafts` directory.  
+As we can see from the output, the `u` (user), `researcher2`, and `g` (group), `research_team`, have access to the `drafts` directory.  
 >`drwx--x---` `2 researcher2 research_team` `4096 Apr 27 17:29 drafts`  
+
+To remove the execute permission for the group from the drafts directory. We will use the `chmod` command again.
+* `chmod g-x drafts`
+
+>researcher2@2dfe8e5aabad:/projects$ `chmod g-x drafts`              
+researcher2@2dfe8e5aabad:~/projects$ `ls -la`  
+total 32  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:09 .  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 19:01 ..  
+-r--r----- 1 researcher2 research_team   46 Apr 27 18:09 .project_x.txt  
+`drwx------` `2 researcher2 research_team 4096 Apr 27 18:09 drafts`  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_k.txt  
+-rw------- 1 researcher2 research_team   46 Apr 27 18:09 project_m.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_r.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 18:09 project_t.txt  
