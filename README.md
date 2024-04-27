@@ -119,7 +119,7 @@ Check whether any files in the projects directory have write permissions for the
 researcher2@e587efd88d96:~/projects$ `ls -l`  
 total 20  
 drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts  
-`-rw-rw-rw- 1 researcher2 research_team   46 Apr 27 17:29 project_k.txt`  
+`-rw-rw-rw-` `1 researcher2 research_team   46 Apr 27 17:29 project_k.txt`  
 -rw-r----- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt
@@ -127,3 +127,15 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts
 We can see that the file `project_k.txt` has write permissions for the owner type of other.  
 Change the permissions of the file identified in the previous step so that the owner type of other doesn’t have write permissions using the `chmod` command.
 * The `chmod` command `u` sets the permissions for the user who owns the file, `g` sets the permissions for the group that owns the file, and `o` sets the permissions for others.
+* `chmod o-w project_k.txt`
+
+There will be no output to indicate that the change has been made. To see if the change has been made we will use the `ls -l` command again
+
+researcher2@e587efd88d96:~/projects$ chmod o-w project_k.txt  
+researcher2@e587efd88d96:~/projects$ ls -l  
+total 20  
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts  
+`-rw-rw-r--` 1 researcher2 research_team   46 Apr 27 17:29 project_k.txt  
+-rw-r----- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt 
