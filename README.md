@@ -158,3 +158,40 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts
 `-rw-------` `1 researcher2 research_team   46 Apr 27 17:29 project_m.txt`  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt  
+
+## Change file permissions on a hidden file <a name="permissions2">
+As mentioned above we can see any hidden files if we add the `-a` modifier and combine it with the `-l` modifier when using the `ls` command.  
+* `ls -a`
+
+>researcher2@e587efd88d96:~/projects$ `chmod g-rw project_m.txt`  
+researcher2@e587efd88d96:/projects$ `ls -la`  
+total 32  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 17:29 .  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:01 ..  
+`-rw--w---- 1 researcher2 research_team   46 Apr 27 17:29` `.project_x.txt`  
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_k.txt  
+-rw------- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt
+
+In most Linux file managers, hidden files and directories start with a dot `.` prefix, such as `.bashrc` or `.config.`
+
+The file `.project_x.txt` is a hidden file that has been archived and should not be written to by anyone. (The user and group should still be able to read this file.)
+
+`-rw--w---- 1 researcher2 research_team   46 Apr 27 17:29` `.project_x.txt`  
+
+Currently both the User and Group have write permissions. To fix this we will use the `chmod` command again.
+* `chmod ug-w .project_x.txt`
+
+>researcher2@e587efd88d96:~/projects$ `chmod ug-w .project_x.txt`  
+researcher2@e587efd88d96:~/projects$ `ls -la`  
+total 32  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 17:29 .  
+drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 18:01 ..  
+`-r--------` `1 researcher2 research_team   46 Apr 27 17:29 .project_x.txt`  
+drwx--x--- 2 researcher2 research_team 4096 Apr 27 17:29 drafts  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_k.txt  
+-rw------- 1 researcher2 research_team   46 Apr 27 17:29 project_m.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_r.txt  
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 17:29 project_t.txt  
