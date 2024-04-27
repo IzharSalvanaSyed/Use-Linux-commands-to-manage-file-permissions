@@ -46,3 +46,8 @@ permissions on drafts are:
 -● User = read, write, execute
 -● Group = execute
 -● Other = none
+
+Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
