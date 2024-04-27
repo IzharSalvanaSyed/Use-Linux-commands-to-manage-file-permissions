@@ -94,15 +94,18 @@ We can also combine the `-l` modifier with `-a` to get the full list and permiss
 
 From the above screenshots, you will see that `.project_x.txt` is the hidden file in the directory.
 
-[researcher2@c16d016cb98f:~/projects$ `ls -l`  
+researcher2@c16d016cb98f:~/projects$ `ls -l`  
 total 20
+
 drwx--x--- 2 researcher2 research_team 4096 Apr 27 16:40 drafts
 -rw-rw-rw- 1 researcher2 research_team   46 Apr 27 16:40 project_k.txt
 -rw-r----- 1 researcher2 research_team   46 Apr 27 16:40 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_r.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_t.txt
+
 researcher2@c16d016cb98f:~/projects$ `ls -la`
 total 32
+
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 16:40 .
 drwxr-xr-x 3 researcher2 research_team 4096 Apr 27 16:58 ..
 -rw--w---- 1 researcher2 research_team   46 Apr 27 16:40 `.project_x.txt`
@@ -110,4 +113,4 @@ drwx--x--- 2 researcher2 research_team 4096 Apr 27 16:40 drafts
 -rw-rw-rw- 1 researcher2 research_team   46 Apr 27 16:40 project_k.txt
 -rw-r----- 1 researcher2 research_team   46 Apr 27 16:40 project_m.txt
 -rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_r.txt
--rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_t.txt]
+-rw-rw-r-- 1 researcher2 research_team   46 Apr 27 16:40 project_t.txt
