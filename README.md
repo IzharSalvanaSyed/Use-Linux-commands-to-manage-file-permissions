@@ -8,7 +8,7 @@ Examine existing permissions on the file system, determine if the permissions ma
 3. [Change file permissions](#permissions)
 4. [Change file permissions on a hidden file](#permissions2)
 5. [Change directory permissions](#permissions3)
-6. [Summary](#permissions4)
+6. [Summary](#summary)
 
 ## Project description <a name="description">
 You are a security professional at a large organization. You mainly work with their research team. Part of your job is to ensure users on this team are authorized with the appropriate permissions. This helps keep the system secure. 
